@@ -62,6 +62,62 @@ header nav a {
 
 /* MAIN */
 
+.get-started {
+    padding: 6rem 8rem 6rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    background: var(--desaturated-blue);
+    max-height: fit-content;
+    color: #fff;
+    min-height: 300px;
+}
+
+.get-started div {
+    width: 500px;
+}
+
+.get-started form {
+    font-family: Raleway;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-right: 3rem;
+    ;
+}
+
+.get-started input {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 1rem;
+    -webkit-box-shadow: 3px 6px 4px -1px rgba(0, 0, 0, 0.16);
+    box-shadow: 3px 6px 4px -1px rgba(0, 0, 0, 0.16);
+}
+
+.get-started button {
+    background: var(--bright-blue);
+    border: none;
+    border-radius: 2px;
+    margin-top: .8rem;
+    width: 180px;
+    -webkit-box-shadow: 3px 6px 4px -1px rgba(0, 0, 0, 0.16);
+    box-shadow: 3px 6px 4px -1px rgba(0, 0, 0, 0.16);
+    color: #fff;
+    height: 40px;
+    font-weight: bold;
+}
+
+::placeholder {
+    opacity: .6;
+}
+
+.get-started h2 {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
 
 /* END OF MAIN */
 
@@ -75,7 +131,7 @@ footer {
     display: grid;
     grid-template-columns: minmax(min-content, 30%);
     grid-template-rows: 150px 1fr 30px;
-    padding: 3rem 0 0 6rem;
+    padding: 3rem 0 0 8rem;
 }
 
 ul {
