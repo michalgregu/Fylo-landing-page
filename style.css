@@ -16,12 +16,15 @@ a {
 
 /* CUSTOM PROPERTIES */
 
---dark-blue :hsl(243, 87%, 12%);
---desaturated-blue :hsl(238, 22%, 44%);
---bright-blue:hsl(224, 93%, 58%);
---cyan:hsl(170, 45%, 43%);
---grayish-blue:hsl(240, 75%, 98%);
---gray:hsl(0, 0%, 75%);
+:root {
+    --dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+    --bright-blue: hsl(224, 93%, 58%);
+    --cyan: hsl(170, 45%, 43%);
+    --grayish-blue: hsl(240, 75%, 98%);
+    --gray: hsl(0, 0%, 75%);
+}
+
 
 /* END OF CUSTOM PROPERTIES */
 
@@ -30,6 +33,7 @@ a {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    height: 100%;
 }
 
 header {
@@ -60,6 +64,113 @@ header nav a {
 
 
 /* END OF MAIN */
+
+
+/* FOOTER */
+
+footer {
+    background: var(--dark-blue);
+    color: var(--gray);
+    height: auto;
+    display: grid;
+    grid-template-columns: minmax(min-content, 30%);
+    grid-template-rows: 150px 1fr 30px;
+    padding: 3rem 0 0 6rem;
+}
+
+ul {
+    list-style: none;
+}
+
+footer a {
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.social i {
+    color: var(--gray);
+    border: 1px solid var(--gray);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    text-decoration: none;
+    outline: none;
+    position: relative;
+    top: 13px;
+}
+
+.logocontainer {
+    grid-column: 1/5;
+    grid-row: 1;
+    flex-direction: column-reverse;
+    align-self: flex-end;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    height: 100%;
+    width: 200px;
+}
+
+address {
+    padding-top: 0;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.about-us {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    line-height: 2.5rem;
+    padding-top: 0;
+}
+
+.contact-us {
+    padding-top: 0;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    line-height: 2.5rem;
+}
+
+.social {
+    padding-top: 0;
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.attribution {
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
+
+address {
+    line-height: 2.5rem;
+}
+
+.phone {
+    line-height: 2.5rem;
+}
+
+.phone img {
+    float: left;
+    line-height: 2.5rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+    margin-top: .7rem;
+}
+
+.email img {
+    float: left;
+    margin-right: 1rem;
+    margin-top: .8rem;
+}
+
+
+/* END OF FOOTER */
 
 
 /* ATTRIBUTION */
